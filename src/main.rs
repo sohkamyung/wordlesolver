@@ -6,7 +6,8 @@ use std::fs::File;
 use std::io::{prelude::*, BufReader};
 use std::path::PathBuf;
 
-use wordlesolver::WordleWords;
+mod wordle;
+use wordle::WordleWords;
 
 // Structure for our command line arguments
 /// Program to display possible Wordle Words

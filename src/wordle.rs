@@ -35,7 +35,7 @@ impl WordleWords {
     ///
     /// # Example
     /// ```
-    /// use wordlesolver::WordleWords;
+    /// use WordleWords;
     ///
     /// let v = vec![
     ///     String::from("aaaaa"),
@@ -77,7 +77,7 @@ impl WordleWords {
     ///
     /// # Example
     /// ```
-    /// use wordlesolver::WordleWords;
+    /// use WordleWords;
     ///
     /// let v = vec![
     ///     String::from("aaaaa"),
@@ -128,7 +128,7 @@ impl WordleWords {
     /// Unknown letters should be replaced by a '.'
     ///
     /// ```
-    /// use wordlesolver::WordleWords;
+    /// use WordleWords;
     ///
     /// let v = vec![
     ///     String::from("aaaaa"),
