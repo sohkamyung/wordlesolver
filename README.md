@@ -32,6 +32,7 @@ Arguments:
   [FILENAME]  File that contains the list of possible wordle words [default: wordle.list]
 
 Options:
+  -t, --tui                    Use a Text UI (TUI). This will ignore other options
   -e, --exclude <EXCLUDE>      Exclude words with these letters
   -c, --correct <CORRECT>      Letters in correct position. '.' for those not yet known
   -i, --incorrect <INCORRECT>  Letters in incorrect positions. '.' for those not yet known. Format in "xxxxx yyyyy zzzzz ....." format
@@ -45,7 +46,19 @@ By default, the program expects a `wordle.list` file in the current
 subdirectory. This is a simple line terminated list of possible wordle
 words. You can get this from multiple sources.
 
-## Example:
+## Examples:
+
+`cargo run -- -h`
+
+Displays the help page.
+
+`cargo run -- -t`
+
+This will launch a Text UI (using the
+[Cursive](https://docs.rs/cursive/latest/cursive/) crate). Navigate
+the UI components to enter letters that are excluded, included and
+incorrect. Selecting the 'Update' button will then update the possible
+list of Wordle words based on the current selection of letters.
 
 `cargo run -- -e "steamginml" -c "b..o." -i "d.... ..e.."`
 

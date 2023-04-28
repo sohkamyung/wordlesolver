@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.1.13", features = ["derive"] }
+cursive = { version = "0.20.0", default-features = false, features = ["pancurses-backend"] }
